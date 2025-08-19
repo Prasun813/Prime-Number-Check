@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: cornflowerblue;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 255, 0.378);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.214);
+  padding: 1vw;
+}
+.navbar .nav {
+  display: flex;
+}
+.navbar .nav ul {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+  align-items: center;
+}
+.navbar .button {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.navbar .button #toggleBtn {
+  padding: 1vw;
+  background-color: transparent;
+  border: none;
+  font-size: 2vw;
+}
+
+@media (max-width: 600px) {
+  .navbar .nav ul {
+    position: absolute;
+    display: flex;
+    right: 0;
+    left: 0;
+    top: 7%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 255, 0.378);
+    overflow: hidden;
+    transition: all 0.5s;
+    font-size: 1.3rem;
+  }
+  .navbar .button {
+    display: flex;
+    justify-content: end;
+  }
+  .navbar .button #toggleBtn {
+    font-size: 1.5rem;
+  }
+}

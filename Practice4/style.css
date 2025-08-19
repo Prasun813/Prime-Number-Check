@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3vw;
+    overflow: hidden;
+    position: relative;
+
+}
+#circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: lightslategrey;
+    position: absolute;
+    box-shadow: 0 0 10px #fff;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+.main{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    border: 1px solid #fff;
+    padding: 2vw;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 0 0 10px red;
+}
+
+.InputBox{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    padding: 1vw;
+}
+input{
+    width: 19rem;
+    height: 2.4rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#submitBtn{
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 10px;
+}
+
+.innerContent{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    background-color: darkslategray;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    gap: 1vw;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.removeBtn{
+    width: 2rem;
+    height: 2rem;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
